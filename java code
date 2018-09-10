@@ -1,0 +1,24 @@
+let getal = 0
+input.onButtonPressed(Button.A, () => {
+    for (let i = 0; i < 1; i++) {
+        getal = 1 + Math.random(11) + Math.random(10)
+        if (getal % 3 == 0) {
+            if (getal % 5 == 0) {
+                basic.showString("fizz buzz")
+            }
+        }
+        if (getal % 3 == 0) {
+            basic.showString("fizz")
+        }
+        if (getal % 5 == 0) {
+            basic.showString("buzz")
+        }
+        basic.showNumber(getal)
+    }
+})
+input.onButtonPressed(Button.B, () => {
+    getal = 0
+})
+basic.forever(() => {
+	
+})
